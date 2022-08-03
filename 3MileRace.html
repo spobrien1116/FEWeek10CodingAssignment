@@ -9,7 +9,8 @@
 </head>
 <body>
     <main class="container-fluid">
-        <table class="table table-bordered table-striped">
+        <br>
+        <table class="table table-bordered table-striped" id="raceResults">
             <caption>More of a theoretical race than a real one.</caption>
             <thead class="table-dark">
                 <tr>
@@ -20,19 +21,19 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr id="1">
                     <th scope="row">1st</th>
                     <td>A Light Particle</td>
                     <td>e=mc²</td>
                     <td>.0000062 seconds</td>
                 </tr>
-                <tr>
+                <tr id="2">
                     <th scope="row">2nd</th>
                     <td>Flash</td>
                     <td>84</td>
                     <td>2.11 seconds</td>
                 </tr>
-                <tr>
+                <tr id="3">
                     <th scope="row">3rd</th>
                     <td>Sonic</td>
                     <td>0</td>
@@ -40,8 +41,31 @@
                 </tr>
             </tbody>
         </table>
+        
+        <form class="container border border-danger p-4">
+            <div class="form-group mb-3">
+                <label for="place">Place Finished</label>
+                <input type="text" class="form-control" id="place" placeholder="What place did the racer finish?">
+            </div>
+            <div class="form-group mb-3">
+                <label for="contestant">Contestant</label>
+                <input type="text" class="form-control" id="contestant" placeholder="What is the contestant's name?">
+            </div>
+            <div class="form-group mb-3">
+                <label for="number">Racing Number</label>
+                <input type="text" class="form-control" id="number" placeholder="What is their racing number?">
+            </div>
+            <div class="form-group mb-3">
+                <label for="time">Time</label>
+                <input type="text" class="form-control" id="time" placeholder="How fast did they finish?">
+            </div>
+            <div>
+                <button type="submit" class="btn btn-success" id="addRacer">Add Racer</button>
+            </div>
+        </form>
     </main>
 
+    <script src="3MileRaceAddRacer.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
