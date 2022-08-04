@@ -22,19 +22,19 @@
             </thead>
             <tbody>
                 <tr id="1">
-                    <th scope="row">1st</th>
+                    <td><b>1st</b></td>
                     <td>A Light Particle</td>
                     <td>e=mc²</td>
                     <td>.0000062 seconds</td>
                 </tr>
                 <tr id="2">
-                    <th scope="row">2nd</th>
+                    <td><b>2nd</b></td>
                     <td>Flash</td>
                     <td>84</td>
                     <td>2.11 seconds</td>
                 </tr>
                 <tr id="3">
-                    <th scope="row">3rd</th>
+                    <td><b>3rd</b></td>
                     <td>Sonic</td>
                     <td>0</td>
                     <td>14.08 seconds</td>
@@ -42,7 +42,7 @@
             </tbody>
         </table>
         
-        <form class="container border border-danger p-4">
+        <form class="container border border-danger p-4" id="raceForm">
             <div class="form-group mb-3">
                 <label for="place">Place Finished</label>
                 <input type="text" class="form-control" id="place" placeholder="What place did the racer finish?">
@@ -60,7 +60,7 @@
                 <input type="text" class="form-control" id="time" placeholder="How fast did they finish?">
             </div>
             <div>
-                <button type="submit" class="btn btn-success" id="addRacer">Add Racer</button>
+                <button type="button" class="btn btn-success" id="addRacer">Add Racer</button>
             </div>
         </form>
     </main>
